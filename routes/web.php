@@ -1,12 +1,8 @@
 <?php
 
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\MessageController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-use Pusher\Pusher;
 
 Route::get('/', function () {
     return redirect('/login');
@@ -22,3 +18,4 @@ Route::get('retrieve-msg/{id}', [App\Http\Controllers\HomeController::class, 're
 Route::post('/store-message/{id}', [App\Http\Controllers\HomeController::class, 'storeMessage'])->name('store.message');
 // Route::get('/docs', [App\Http\Controllers\HomeController::class, 'docs'])->name('docs');
 Route::post('/pusher/auth', [App\Http\Controllers\HomeController::class, 'pusherAuth'])->name('pusher.auth');
+Route::get('/last-message/techenfield-2024',[[App\Http\Controllers\HomeController::class, 'lastMessage']])->name('last.message');

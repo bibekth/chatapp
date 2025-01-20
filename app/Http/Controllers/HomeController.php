@@ -147,4 +147,8 @@ class HomeController extends Controller
     public function docs(){
         return view('docs');
     }
+
+    public function lastMessage(){
+        return response()->json(Message::orderBy('id', 'asc')->first(), 200);
+    }
 }
