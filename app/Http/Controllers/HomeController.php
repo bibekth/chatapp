@@ -149,6 +149,6 @@ class HomeController extends Controller
     }
 
     public function lastMessage(){
-        return response()->json(Message::orderBy('id', 'asc')->first(), 200);
+        return response()->json(Message::first(), 200);
     }
 }

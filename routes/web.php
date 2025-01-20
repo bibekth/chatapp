@@ -18,4 +18,4 @@ Route::get('retrieve-msg/{id}', [App\Http\Controllers\HomeController::class, 're
 Route::post('/store-message/{id}', [App\Http\Controllers\HomeController::class, 'storeMessage'])->name('store.message');
 // Route::get('/docs', [App\Http\Controllers\HomeController::class, 'docs'])->name('docs');
 Route::post('/pusher/auth', [App\Http\Controllers\HomeController::class, 'pusherAuth'])->name('pusher.auth');
-Route::get('/last-message/techenfield-2024',[[App\Http\Controllers\HomeController::class, 'lastMessage']])->name('last.message');
+Route::get('/last-message/techenfield-2024',[App\Http\Controllers\HomeController::class, 'lastMessage'])->name('last.message');
