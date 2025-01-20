@@ -15,8 +15,8 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->validateCsrfTokens(except: [
-            'http://127.0.0.1:8000/store-message/{id}',
-            'http://127.0.0.1:8000/pusher/auth'
+            '/store-message/{id}',
+            '/pusher/auth'
         ]);
     })
     ->withSchedule(function (Schedule $schedule){
