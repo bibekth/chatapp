@@ -22,3 +22,6 @@ yarn-error.log
 /.vscode
 /.zed
 /database/database.sqlite
+.htaccess
+.ea-php-cli.cache
+error_log
