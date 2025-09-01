@@ -80,10 +80,6 @@
                                 </form>
                             </div>
                         </li>
-                        @endguest
-                        {{-- <li class="nav-item" style="padding-left: 36px;">
-                            <a class="nav-link" href="/docs">Docs</a>
-                        </li> --}}
                         <div class="theme-toggle-container">
                             <input type="checkbox" class="theme-toggle" id="themeToggle">
                             <label for="themeToggle" class="slider">
@@ -91,6 +87,10 @@
                                 <span class="icon moon"><i class="fas fa-moon"></i></span>
                             </label>
                         </div>
+                        @endguest
+                        {{-- <li class="nav-item" style="padding-left: 36px;">
+                            <a class="nav-link" href="/docs">Docs</a>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
