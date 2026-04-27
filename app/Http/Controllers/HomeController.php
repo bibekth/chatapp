@@ -10,6 +10,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Psr\Http\Message\ResponseInterface;
 
 class HomeController extends Controller
 {
@@ -40,6 +41,7 @@ class HomeController extends Controller
         $data['addFriends'] = $authUser->addFriends();
         $data['myFriends'] = $authUser->friends();
         $data['friendRequests'] = $authUser->friendRequests();
+        // dd($data['pusher_config']['key']);
         return view('index', $data);
     }
 

@@ -1,11 +1,13 @@
 const authToken = localStorage.getItem("auth_token");
 var currentUser = {};
 var API_URL = '';
-var pusher_config = '';
+// var pusher_config = '';
+// const pusher_config = window.App.pusher;
+
 $(document).ready(function () {
     $.ajax({
         method: 'GET',
-        url: '/',
+        url: '/home',
         async: false,
         success: function (data) {
             currentUser = data.currentUser;

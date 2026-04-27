@@ -87,4 +87,12 @@
         </div>
     </div>
 </div>
+<script>
+    window.App = {
+        pusher: @json($pusher_config)
+    };
+</script>
+
+
+<script src="{{ asset('index.js') }}" defer></script>
 @endsection

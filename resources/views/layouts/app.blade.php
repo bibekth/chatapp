@@ -106,6 +106,6 @@
         </footer>
     </div>
 </body>
-<script src="{{ asset('index.js') }}" defer></script>
+{{-- <script src="{{ asset('index.js') }}" defer></script> --}}
 
 </html>
